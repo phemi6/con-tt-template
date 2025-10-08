@@ -28,7 +28,7 @@ module tb ();
 `endif
 
   // Replace tt_um_example with your module name:
-  module tt_um_phemi6_lfsr (
+  tt_um_phemi6_lfsr dut (
 
       // Include power ports for the Gate Level test:
 `ifdef GL_TEST
