@@ -14,10 +14,9 @@ module tt_um_phemi6_lfsr (
     input  wire       ena,      // always 1 when the design is powered, so you can ignore it
     input  wire       clk,      // clock
     input  wire       rst_n,     // reset_n - low to reset
-    output wire [31:0] lfsr_output
+    output wire [31:0] lfsr_output // = {16'b0, uio_out, uo_out};
 );
 
-  wire [31:0] lfsr_output;// = {16'b0, uio_out, uo_out};
 
   lfsr my_lfsr (
     .clk_i        (clk),
