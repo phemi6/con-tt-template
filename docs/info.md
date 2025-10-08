@@ -9,11 +9,16 @@ You can also include images in this folder and reference them in the markdown. E
 
 ## How it works
 
-Explain how your project works
-
+This project implements a 32-bit Linear Feedback Shift Register (LFSR) that
+produces pseudo-random numbers. When reset, the register initializes with my
+matriculation number (encoded as 32'd 11927533). Each clock cycle shifts the
+register and XORs specific bits to generate the next state.
 ## How to test
 
-Explain how to use your project
+1. Apply a reset signal (`rst_n` low) to initialize the LFSR.
+2. Release the reset (set `rst_n` high) and apply a clock signal.
+3. Observe the output bits on `uo_out` and `uio_out`.  
+   They should shift in a pseudo-random pattern based on the feedback taps.
 
 ## External hardware
 
